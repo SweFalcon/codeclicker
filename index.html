@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript" src="script.js"></script>
+<head>
+	<title>Code Clicker</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+
+
+<body>
+	<div id="maincontainer">
+	<div id="mainclicking">
+	Code: <input type="text" id="showcode" placeholder="Code" disabled style="text-align: center;">
+	<p>Code/Click: <input type="text" id="showcpc" disabled style="text-align: center;" placeholder="CpC"></p>
+	<p>Code/Second: <input type="text" id="showcps" disabled style ="text-align: center;" placeholder="CpS"></p>
+	<button id="save" onclick="save()">Save/Overwrite</button>
+	<button id="load" onclick="load()">Load/Overwrite</button>
+	<br><br><br>
+	<p><a href="#" onclick="addcode()" id="clickbutton"><img src="windowsxp.jpg"></a></p>
+
+	<br><br><br><br>
+
+	<img src="blank.png" alt="Sry, someone stole the image." onclick="switchimgmonitor()" id="imgmonitor1">
+	<br><br>
+	<img src="blank.png" alt="Sry, someone stole the image." onclick="switchimgpc2()" id="imgkeyboard1">
+	<img src="blank.png" alt="Sry, someone stole the image." onclick="switchimgpc2()" id="imgmouse1">
+
+
+<div id="pcupgrades">
+	<p><h3>Upgrade Pc Setup</h3></p>
+
+		<p><button onclick="upgrade1()">Upgrade Monitor (+1 per click)</button></p>
+		<p>Cost: <input type="text" id="upgrade1cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="upgrade1amount" disabled style="text-align: center;"></p>
+		<br><br>
+
+		<p><button onclick="upgrade2()">Upgrade Mouse (+5 per click)</button></p>
+		<p>Cost: <input type="text" id="upgrade2cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="upgrade2amount" disabled style="text-align: center;"></p>
+		<br><br>
+
+		<p><button onclick="upgrade3()">Upgrade Keyboard(+15 per click)</button></p> 
+		<p>Cost: <input type="text" id="upgrade3cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="upgrade3amount" disabled style="text-align: center;"></p>
+		<br><br>
+
+		<p><button onclick="upgrade4()">Upgrade Computer(+50/click)</button></p>
+		<p>Cost: <input type="text" id="upgrade4cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="upgrade4amount" disabled style="text-align: center;"></p>
+		<br><br>
+</div>
+
+<div id="workerupgrades">
+	<p><h3>Hire Workers</h3></p>
+	<p><button onclick="workers1()">Install Free Autoclicker Software (+1 per second)</button></p>
+		<p>Cost: <input type="text" id="worker1cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="amountworker1" disabled style="text-align: center;"></p>
+		<br><br>
+
+	<p><button onclick="workers2()">Build Robot (+3 per second)</button></p>
+		<p>Cost: <input type="text" id="worker2cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="amountworker2" disabled style="text-align: center;"></p>
+		<br><br>
+
+	<p><button onclick="workers3()">Hire Human (+10 per second)</button></p>
+		<p>Cost: <input type="text" id="worker3cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="amountworker3" disabled style="text-align: center;"></p>
+		<br><br>
+
+	<p><button onclick="workers4()">Buy Premium Autoclicker Software (+25 per second)</button></p>
+		<p>Cost: <input type="text" id="worker4cost" disabled style="text-align: center;"></p>
+		<p>Amount: <input type="text" id="amountworker4" disabled style="text-align: center;"></p>
+		<br><br>
+</div>
+
+
+	</div>
+</body>
+</html>
